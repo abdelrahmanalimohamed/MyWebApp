@@ -41,5 +41,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
+          context : .
+          file : ./MyWebApp/Dockerfile
           push: true
           tags: abdelrahmanali/mywebapp:latest 
